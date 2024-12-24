@@ -20,17 +20,21 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="profile">
-            <h2>Modifier les Informations Personnelles</h2>
-            <form>
-                <input type="text" id="firstname" name="firstname" placeholder="Prénom">
-                <input type="text" id="lastname" name="lastname" placeholder="Nom">
-                <button type="submit" class="bg-green">Enregistrer</button>
+        <section id="appointments">
+            <h2>Prendre un Rendez-vous</h2>
+            <form action="" class="denez_vous" method="post">
+                <label for="doctor">Médecin</label>
+                <select id="doctor" name="doctor">
+                    <option value="">Choisir un médecin</option>
+                    <option value="Dr. Dupont">Dr. Dupont</option>
+                    <option value="Dr. Martin">Dr. Martin</option>
+                </select>
+                <button type="submit">Prendre Rendez-vous</button>
             </form>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Centre Médical. Tous droits réservés.</p>
     </footer>
