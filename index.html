@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Centre Médical</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Centre Médical</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#appointments">Rendez-vous</a></li>
+                    <li><a href="#profile">Profil</a></li>
+                    <li><a href="#invoices">Factures</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section: Prendre un rendez-vous -->
+        <section id="appointments">
+            <h2>Prendre un Rendez-vous</h2>
+            <form action="" class="denez_vous" method="post">
+                <label for="doctor">Médecin</label>
+                <select id="doctor" name="doctor">
+                    <option value="">Choisir un médecin</option>
+                    <option value="Dr. Dupont">Dr. Dupont</option>
+                    <option value="Dr. Martin">Dr. Martin</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+
+                <button type="submit">Prendre Rendez-vous</button>
+            </form>
+        </section>
+
+        <!-- Section: Annuler un rendez-vous -->
+        <section id="cancel">
+            <h2>Annuler un Rendez-vous</h2>
+            <form>
+                <label for="appointment">Rendez-vous</label>
+                <select id="appointment" name="appointment">
+                    <option value="">Choisir un rendez-vous</option>
+                    <option value="1">15/01/2024 - Dr. Dupont</option>
+                    <option value="2">18/01/2024 - Dr. Martin</option>
+                </select>
+
+                <button type="submit" class="bg-red">Annuler</button>
+            </form>
+        </section>
+
+        <!-- Section: Modifier les informations personnelles -->
+        <section id="profile">
+            <h2>Modifier les Informations Personnelles</h2>
+            <form>
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" name="firstname">
+
+                <label for="lastname">Nom</label>
+                <input type="text" id="lastname" name="lastname">
+
+                <button type="submit" class="bg-green">Enregistrer</button>
+            </form>
+        </section>
+
+        <!-- Section: Afficher les factures -->
+        <section id="invoices">
+            <h2>Factures</h2>
+            <ul>
+                <li>
+                    <span>Facture #001 - 15/01/2024</span>
+                    <span>50€</span>
+                </li>
+                <li>
+                    <span>Facture #002 - 18/01/2024</span>
+                    <span>75€</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Centre Médical. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
