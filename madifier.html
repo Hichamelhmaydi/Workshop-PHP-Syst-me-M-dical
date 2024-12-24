@@ -18,12 +18,12 @@
 </header>
 <body>
     <main>
-        <section id="Inscription">
-            <h2>Inscription</h2>
-            <form action="" class="denez_vous" method="post">
-                <input type="text" name="nom" maxlength="20" required placeholder="Votre nom">
-                <input type="text" name="prenom" maxlength="20" required placeholder="Votre prenom">
-                <button type="submit" class="bg-blue">Inscription</button>
+        <section id="profile">
+            <h2>Modifier les Informations Personnelles</h2>
+            <form  action="./php/add_to_db.php"  method="post">
+                <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                <input type="text" id="lastname" name="lastname" placeholder="Nom">
+                <button type="submit" class="bg-green">Enregistrer</button>
             </form>
         </section>
     </main>

@@ -12,7 +12,7 @@
             <h1>Centre Médical</h1>
             <nav>
                 <ul>
-                    <li><a href="inscription.html">inscription</a></li>
+                    <li><a href="madifier.html">modifier</a></li>
                     <li><a href="choix_dr.html">choix le médecin</a></li>
                     <li><a href="facture.html">facture</a></li>
                 </ul>
@@ -20,12 +20,12 @@
         </div>
     </header>
     <main>
-        <section id="profile">
-            <h2>Modifier les Informations Personnelles</h2>
-            <form>
-                <input type="text" id="firstname" name="firstname" placeholder="Prénom">
-                <input type="text" id="lastname" name="lastname" placeholder="Nom">
-                <button type="submit" class="bg-green">Enregistrer</button>
+        <section id="Inscription">
+            <h2>Inscription</h2>
+            <form action="./php/add_to_db.php"  method="post">
+                <input type="text" name="nom" maxlength="20" required placeholder="Votre nom">
+                <input type="text" name="prenom" maxlength="20" required placeholder="Votre prenom">
+                <button type="submit" class="bg-blue">Inscription</button>
             </form>
         </section>
     </main>
